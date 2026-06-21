@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | MOE KYAW AUNG</title>
+  <meta name="description" content="Contact form with clear validation and premium presentation." />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Orbitron:wght@600;700;800&family=Fira+Code&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-animated-grid">
+  <a class="skip-link" href="#content">Skip to content</a>
+  <div class="crt-lines"></div>
+  <div class="preloader"><div class="spinner"></div></div>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">MOE KYAW AUNG</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent" aria-label="Toggle navigation"><i class="fa-solid fa-bars"></i></button>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+          <li class="nav-item"><a class="nav-link" href="certificates.html">Certificates</a></li>
+          <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="pricing.html">Pricing</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-2"><button id="themeToggle" class="btn btn-outline-light btn-sm" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="content">
+    <section class="hero hero-shell">
+      <div class="container">
+        <div class="row align-items-end">
+          <div class="col-lg-8 fade-in-section">
+            <span class="hero-kicker">Contact</span>
+            <h1 class="hero-title">Let’s discuss your next premium build.</h1>
+            <p class="hero-copy">Use the form below to start a project, request a consultation, or ask about collaboration.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6 fade-in-section">
+            <form id="contactForm" class="panel-card card-pad needs-validation" novalidate>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input id="name" class="form-control" type="text" required />
+                <div class="invalid-feedback"></div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" class="form-control" type="email" required />
+                <div class="invalid-feedback"></div>
+              </div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <input id="subject" class="form-control" type="text" required />
+                <div class="invalid-feedback"></div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" class="form-control" rows="6" required></textarea>
+                <div class="invalid-feedback"></div>
+              </div>
+              <button class="btn btn-primary" type="submit">Send Message</button>
+            </form>
+          </div>
+
+          <div class="col-lg-6 fade-in-section">
+            <div class="panel-card card-pad h-100">
+              <h3>Contact Details</h3>
+              <p>GitHub: <a href="https://github.com/moekyawaung13721">moekyawaung13721</a></p>
+              <p>Email: <a href="mailto:moekyawaung@example.com">moekyawaung@example.com</a></p>
+              <p>Phone: <a href="tel:+1234567890">+1234567890</a></p>
+
+              <div class="accordion mt-4" id="contactAccordion">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="faqOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOneBody" aria-expanded="true" aria-controls="faqOneBody">What kind of projects do you take?</button>
+                  </h2>
+                  <div id="faqOneBody" class="accordion-collapse collapse show" aria-labelledby="faqOne" data-bs-parent="#contactAccordion">
+                    <div class="accordion-body">Android product work, feature builds, UI refinement, and architecture cleanup.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="faqTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwoBody" aria-expanded="false" aria-controls="faqTwoBody">How fast do you respond?</button>
+                  </h2>
+                  <div id="faqTwoBody" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-bs-parent="#contactAccordion">
+                    <div class="accordion-body">Usually within one business day for serious project inquiries.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="ratio ratio-16x9 mt-4">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12080!2d30!3d12080!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="back-to-top" href="#content" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
